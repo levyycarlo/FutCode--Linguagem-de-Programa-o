@@ -1,0 +1,34 @@
+iniciar_partida
+
+def_tática verificar_gol(time, gols):
+    se_der gols > 0:
+        narrar f"{time} marcou {gols} gols!"
+    senão:
+        narrar f"{time} não marcou nenhum gol."
+
+
+def_tática partida_futebol():
+    time1 = "Time A"
+    time2 = "Time B"
+
+    narrar "Início da partida!"
+
+    
+    gols_time1 = recebe_passe("Quantos gols o Time A marcou?")
+    gols_time2 = recebe_passe("Quantos gols o Time B marcou?")
+
+    verificar_gol(time1, int(gols_time1))
+    verificar_gol(time2, int(gols_time2))
+
+    
+    se_der int(gols_time1) > int(gols_time2):
+        narrar f"{time1} venceu!"
+    se_não_der int(gols_time2) > int(gols_time1):
+       narrar f"{time2} venceu!"
+    senão:
+        narrar "A partida terminou empatada!"
+
+
+partida_futebol()
+
+fim_partida

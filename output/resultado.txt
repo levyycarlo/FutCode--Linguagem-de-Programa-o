@@ -1,0 +1,102 @@
+| Lexema          | Token                     | Linha |
+| iniciar_partida | PALAVRA_CHAVE        | 1     |
+| def_tática      | PALAVRA_CHAVE        | 3     |
+| verificar_gol   | IDENTIFICADOR        | 3     |
+| (               | PAR_ESQUERDO         | 3     |
+| time            | PALAVRA_CHAVE        | 3     |
+| ,               | VIRGULA              | 3     |
+| gols            | IDENTIFICADOR        | 3     |
+| )               | PAR_DIREITO          | 3     |
+| :               | DOIS_PONTOS          | 3     |
+| se_der          | PALAVRA_CHAVE        | 4     |
+| gols            | IDENTIFICADOR        | 4     |
+| >               | MAIOR                | 4     |
+| 0               | NUMERO_INTEIRO       | 4     |
+| :               | DOIS_PONTOS          | 4     |
+| narrar          | PALAVRA_CHAVE        | 5     |
+| f               | IDENTIFICADOR        | 5     |
+| "{time} marcou {gols} gols!" | STRING               | 5     |
+| senão           | PALAVRA_CHAVE        | 6     |
+| :               | DOIS_PONTOS          | 6     |
+| narrar          | PALAVRA_CHAVE        | 7     |
+| f               | IDENTIFICADOR        | 7     |
+| "{time} não marcou nenhum gol." | STRING               | 7     |
+| def_tática      | PALAVRA_CHAVE        | 10    |
+| partida_futebol | IDENTIFICADOR        | 10    |
+| (               | PAR_ESQUERDO         | 10    |
+| )               | PAR_DIREITO          | 10    |
+| :               | DOIS_PONTOS          | 10    |
+| time1           | IDENTIFICADOR        | 11    |
+| =               | OPERADOR_ATRIBUICAO  | 11    |
+| "Time A"        | STRING               | 11    |
+| time2           | IDENTIFICADOR        | 12    |
+| =               | OPERADOR_ATRIBUICAO  | 12    |
+| "Time B"        | STRING               | 12    |
+| narrar          | PALAVRA_CHAVE        | 14    |
+| "Início da partida!" | STRING               | 14    |
+| gols_time1      | IDENTIFICADOR        | 17    |
+| =               | OPERADOR_ATRIBUICAO  | 17    |
+| recebe_passe    | PALAVRA_CHAVE        | 17    |
+| (               | PAR_ESQUERDO         | 17    |
+| "Quantos gols o Time A marcou?" | STRING               | 17    |
+| )               | PAR_DIREITO          | 17    |
+| gols_time2      | IDENTIFICADOR        | 18    |
+| =               | OPERADOR_ATRIBUICAO  | 18    |
+| recebe_passe    | PALAVRA_CHAVE        | 18    |
+| (               | PAR_ESQUERDO         | 18    |
+| "Quantos gols o Time B marcou?" | STRING               | 18    |
+| )               | PAR_DIREITO          | 18    |
+| verificar_gol   | IDENTIFICADOR        | 20    |
+| (               | PAR_ESQUERDO         | 20    |
+| time1           | IDENTIFICADOR        | 20    |
+| ,               | VIRGULA              | 20    |
+| int             | IDENTIFICADOR        | 20    |
+| (               | PAR_ESQUERDO         | 20    |
+| gols_time1      | IDENTIFICADOR        | 20    |
+| )               | PAR_DIREITO          | 20    |
+| )               | PAR_DIREITO          | 20    |
+| verificar_gol   | IDENTIFICADOR        | 21    |
+| (               | PAR_ESQUERDO         | 21    |
+| time2           | IDENTIFICADOR        | 21    |
+| ,               | VIRGULA              | 21    |
+| int             | IDENTIFICADOR        | 21    |
+| (               | PAR_ESQUERDO         | 21    |
+| gols_time2      | IDENTIFICADOR        | 21    |
+| )               | PAR_DIREITO          | 21    |
+| )               | PAR_DIREITO          | 21    |
+| se_der          | PALAVRA_CHAVE        | 24    |
+| int             | IDENTIFICADOR        | 24    |
+| (               | PAR_ESQUERDO         | 24    |
+| gols_time1      | IDENTIFICADOR        | 24    |
+| )               | PAR_DIREITO          | 24    |
+| >               | MAIOR                | 24    |
+| int             | IDENTIFICADOR        | 24    |
+| (               | PAR_ESQUERDO         | 24    |
+| gols_time2      | IDENTIFICADOR        | 24    |
+| )               | PAR_DIREITO          | 24    |
+| :               | DOIS_PONTOS          | 24    |
+| narrar          | PALAVRA_CHAVE        | 25    |
+| f               | IDENTIFICADOR        | 25    |
+| "{time1} venceu!" | STRING               | 25    |
+| se_não_der      | PALAVRA_CHAVE        | 26    |
+| int             | IDENTIFICADOR        | 26    |
+| (               | PAR_ESQUERDO         | 26    |
+| gols_time2      | IDENTIFICADOR        | 26    |
+| )               | PAR_DIREITO          | 26    |
+| >               | MAIOR                | 26    |
+| int             | IDENTIFICADOR        | 26    |
+| (               | PAR_ESQUERDO         | 26    |
+| gols_time1      | IDENTIFICADOR        | 26    |
+| )               | PAR_DIREITO          | 26    |
+| :               | DOIS_PONTOS          | 26    |
+| narrar          | PALAVRA_CHAVE        | 27    |
+| f               | IDENTIFICADOR        | 27    |
+| "{time2} venceu!" | STRING               | 27    |
+| senão           | PALAVRA_CHAVE        | 28    |
+| :               | DOIS_PONTOS          | 28    |
+| narrar          | PALAVRA_CHAVE        | 29    |
+| "A partida terminou empatada!" | STRING               | 29    |
+| partida_futebol | IDENTIFICADOR        | 32    |
+| (               | PAR_ESQUERDO         | 32    |
+| )               | PAR_DIREITO          | 32    |
+| fim_partida     | PALAVRA_CHAVE        | 34    |
